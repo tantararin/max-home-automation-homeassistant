@@ -1,0 +1,26 @@
+{
+  "name": "max_home_automation",
+  "version": "1",
+  "slug": "Max Home Automation for HomeAsssistant",
+  "description": "Homegear as a Hassio add-on",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "auto_uart":"true",
+  "gpio": true,
+  "privileged": [
+    "SYS_ADMIN",
+    "SYS_RAWIO"
+  ],
+  "map": ["config:rw", "share:rw", "ssl:rw"],
+  "ports": {
+    "5800/tcp": 5800,
+    "5900/tcp": 5900
+  },
+  "environment": {
+  },
+  "options": {
+  },
+  "schema": {
+  }
+}
